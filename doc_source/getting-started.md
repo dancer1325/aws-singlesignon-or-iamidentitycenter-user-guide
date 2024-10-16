@@ -1,7 +1,5 @@
 # Getting started<a name="getting-started"></a>
 
-The topics in this section will help you get started with IAM Identity Center\. 
-
 **Topics**
 + [Prerequisites and considerations](get-started-prereqs-considerations.md)
 + [Step 1: Enable IAM Identity Center](get-started-enable-identity-center.md)
