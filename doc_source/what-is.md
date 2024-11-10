@@ -59,37 +59,37 @@
 
 ## IAM Identity Center rename<a name="renamed"></a>
 
-* TODO:
-On July 26, 2022, AWS Single Sign\-On was renamed to AWS IAM Identity Center \(successor to AWS Single Sign\-On\)\. For existing customers, the following table is meant to describe some of the more common term changes that have been updated throughout this guide as a result of the rename\.
+* | July 26, 2022, AWS Single Sign-On -- was renamed to -- AWS IAM Identity Center
+* table term comparison
+    
+    | **Legacy term** | **Current term** | 
+    | --- | --- | 
+    | AWS SSO user or SSO user | workforce user or user | 
+    | AWS SSO user portal or user portal | AWS access portal | 
+    | AWS SSO\-integrated applications | Identity Center enabled applications | 
+    | AWS SSO directory | Identity Center directory | 
+    | AWS SSO store or AWS SSO identity store | identity store used by IAM Identity Center | 
+
+* table comparison for
+  * applicable user,
+  * developer reference
+  * API reference
+
+    | **Legacy guide** | **Current guide** | 
+    | --- | --- | 
+    | AWS Single Sign\-On User Guide | [IAM Identity Center User Guide](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) | 
+    | AWS Single Sign\-On SCIM Implementation Developer Guide | [IAM Identity Center SCIM Implementation Developer Guide](https://docs.aws.amazon.com/singlesignon/latest/developerguide/what-is-scim.html) | 
+    | AWS Single Sign\-On API Reference Guide | [IAM Identity Center API Reference](https://docs.aws.amazon.com/singlesignon/latest/APIReference/welcome.html) | 
+    | AWS Single Sign\-On Identity Store API Reference Guide | [Identity Store API Reference](https://docs.aws.amazon.com/singlesignon/latest/developerguide/what-is-scim.html) | 
+    | AWS Single Sign\-On OIDC API Reference Guide | [IAM Identity Center OIDC API Reference](https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/Welcome.html) | 
+    | AWS Single Sign\-On Portal API Reference Guide | [IAM Identity Center Portal API Reference](https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/Welcome.html) | 
+
+### Legacy namespaces / remain the same<a name="legacy-namespaces"></a>
 
 
-| **Legacy term** | **Current term** | 
-| --- | --- | 
-| AWS SSO user or SSO user | workforce user or user | 
-| AWS SSO user portal or user portal | AWS access portal | 
-| AWS SSO\-integrated applications | Identity Center enabled applications | 
-| AWS SSO directory | Identity Center directory | 
-| AWS SSO store or AWS SSO identity store | identity store used by IAM Identity Center | 
-
-The following table describes the applicable user, developer and API reference guide name changes that also took place as a result of this rename\. 
-
-
-| **Legacy guide** | **Current guide** | 
-| --- | --- | 
-| AWS Single Sign\-On User Guide | [IAM Identity Center User Guide](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) | 
-| AWS Single Sign\-On SCIM Implementation Developer Guide | [IAM Identity Center SCIM Implementation Developer Guide](https://docs.aws.amazon.com/singlesignon/latest/developerguide/what-is-scim.html) | 
-| AWS Single Sign\-On API Reference Guide | [IAM Identity Center API Reference](https://docs.aws.amazon.com/singlesignon/latest/APIReference/welcome.html) | 
-| AWS Single Sign\-On Identity Store API Reference Guide | [Identity Store API Reference](https://docs.aws.amazon.com/singlesignon/latest/developerguide/what-is-scim.html) | 
-| AWS Single Sign\-On OIDC API Reference Guide | [IAM Identity Center OIDC API Reference](https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/Welcome.html) | 
-| AWS Single Sign\-On Portal API Reference Guide | [IAM Identity Center Portal API Reference](https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/Welcome.html) | 
-
-### Legacy namespaces remain the same<a name="legacy-namespaces"></a>
-
-
-
-The `sso` and `identitystore` API namespaces along with the following related namespaces **remain unchanged** for backward compatibility purposes\.
-
-
+* API namespaces
+  * `sso`
+  * `identitystore`
 + CLI commands
   + [https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
   + [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/identitystore/index.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/identitystore/index.html)
