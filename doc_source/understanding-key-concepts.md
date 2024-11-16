@@ -1,6 +1,9 @@
 # Key concepts<a name="understanding-key-concepts"></a>
 
-You'll get more out of AWS IAM Identity Center \(successor to AWS Single Sign\-On\) if you become familiar with key concepts relating to SAML federation, user authentication, and IAM permissions\.
+* key concepts -- related to --
+  * SAML federation,
+  * user authentication,
+  * IAM permissions
 
 **Topics**
 + [Users, groups, and provisioning](users-groups-provisioning.md)
