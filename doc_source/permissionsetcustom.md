@@ -1,10 +1,13 @@
 # Custom permissions<a name="permissionsetcustom"></a>
 
-When you create a permission set with **Custom permissions**, you can combine any of the AWS managed and customer managed policies that you have in AWS Identity and Access Management \(IAM\) with *inline policies*, and a *permissions boundary* that sets the maximum possible permissions that any other policy can grant to users of your permission set\.
+* permission set / -- based on -- **Custom permissions**
+  * == you can choose
+    * AWS managed policies
+    * customer managed policies
+    * *inline policies*,
+    * *permissions boundary* 
 
-For a detailed walkthrough of the process to create a permission set, see [Create and manage permission sets](permissionsets.md)\.
-
-**Policy types that you can attach to your permission set**
+* see [Create and manage permission sets](permissionsets.md)
 
 **Topics**
 + [Inline policies](#permissionsetsinlineconcept)
@@ -14,6 +17,7 @@ For a detailed walkthrough of the process to create a permission set, see [Creat
 
 ## Inline policies<a name="permissionsetsinlineconcept"></a>
 
+* TODO:
 You can attach an *inline policy* to a permission set\. An inline policy is a block of text formatted as an IAM policy that you add directly to your permission set\. You can paste in a policy, or generate a new one with the policy creation tool in the IAM Identity Center console when you create a new permission set\. You can also create IAM policies with the [AWS Policy Generator](https://awspolicygen.s3.amazonaws.com/policygen.html)\.
 
 When you deploy a permission set with an inline policy, IAM Identity Center creates an IAM policy in the AWS accounts where you assign your permission set\. IAM Identity Center creates the policy when you assign the permission set to the account\. The policy is then attached to the IAM role in your AWS account that your user assumes\.
@@ -40,12 +44,15 @@ When you create a permission set with a customer managed policy, you must create
 
 For more information, see [Customer managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#customer-managed-policies) in the IAM User Guide\.
 
-
-
 ## Permissions boundaries<a name="permissionsetsboundaryconcept"></a>
 
-You can attach a *permissions boundary* to your permission set\. A permissions boundary is an AWS managed or customer managed IAM policy that sets the maximum permissions that an identity\-based policy can grant to an IAM principal\. When you apply a permissions boundary, your [Inline policies](#permissionsetsinlineconcept), [Customer managed policies](#permissionsetscmpconcept), and [AWS managed policies](#permissionsetsampconcept) can't grant any permissions that exceed the permissions that your permissions boundary grants\. A permissions boundary doesn't grant any permissions, but instead makes it so that IAM ignores all permissions beyond the boundary\.
-
-When you create a permission set with a customer managed policy as a permissions boundary, you must create an IAM policy with the same name in each AWS account where IAM Identity Center assigns your permission set\. IAM Identity Center attaches the IAM policy as a permissions boundary to the IAM role that it creates in your AWS account \.
-
-For more information, see [Permissions boundaries for IAM entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html) in the IAM User Guide\.
+* *permissions boundary*
+  * 👀== AWS managed or customer managed IAM policy / sets the maximum permissions that an identity\-based policy -- can grant to an -- IAM principal 👀
+    * != grant permissions
+  * uses
+    * attach | your permission set
+      * -> your [Inline policies](#permissionsetsinlineconcept), [Customer managed policies](#permissionsetscmpconcept), and [AWS managed policies](#permissionsetsampconcept) -- can NOT grant -- ANY permissions / exceed the permissions set by your permissions boundary
+  * if you create a permission set with a permissions boundary -> you must create an IAM policy / 
+    * | EACH AWS account / IAM Identity Center assigns your permission set
+    * SAME name 
+* see [Permissions boundaries for IAM entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html)
