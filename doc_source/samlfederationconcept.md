@@ -1,5 +1,18 @@
 # SAML federation<a name="samlfederationconcept"></a>
-
-IAM Identity Center supports identity federation with [SAML \(Security Assertion Markup Language\)](https://wiki.oasis-open.org/security) 2\.0\. SAML 2\.0 is an industry standard used for securely exchanging SAML assertions that pass information about a user between a SAML authority \(called an identity provider or IdP\), and a SAML consumer \(called a service provider or SP\)\. IAM Identity Center uses this information to provide federated single sign\-on access for those users who are authorized to use applications within the AWS access portal\. 
-
-IAM Identity Center adds SAML IdP capabilities to either your AWS Managed Microsoft AD or your IAM Identity Center identity store\. Users can then single sign\-on into services that support SAML, including the AWS Management Console and third\-party applications such as Microsoft 365, SAP Concur, and Salesforce\.
+ 
+* SAML 2.0
+  * == industry standard
+  * SAML authority or identity provider or IdP
+  * SAML consumer or service provider or SP
+  * uses
+    * securely exchanging SAML assertions / SAML authority -- pass information about a user to a -- SAML consumer 
+* IAM Identity Center
+  * supports identity federation with -- [SAML v2.0.](https://wiki.oasis-open.org/security) 
+  * uses of SAML
+    * provide federated single sign-on access | those users / authorized to use applications | AWS access portal
+      * AWS Management Console
+      * TP applications
+        * _Example:_ Microsoft 365, SAP Concur, and Salesforce 
+  * adds SAML IdP capabilities | your
+    * AWS Managed Microsoft AD or
+    * IAM Identity Center identity store
